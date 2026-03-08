@@ -1,11 +1,11 @@
 Compiler Design Lab Experiments (Lab 1 – Lab 6) 🧑‍💻
 📘 Overview
 
-This repository contains the complete implementation of Compiler Design Laboratory Experiments (Lab 1 to Lab 6) using Python.
+This repository contains the complete implementation of Compiler Design Laboratory Experiments (Lab 1 to Lab 6) using C++.
 
 Each experiment is organized into a separate folder containing:
 
-Python source code
+C++ source code
 
 Individual README file
 
@@ -20,33 +20,35 @@ Compiler_Design_LabExp-Lab1-Lab6/
 
 │
 ├── Lab-01-Lexical-Analyzer/
-│   ├── lexical_analyzer.py
+│   ├── lexical_analyzer.cpp
 │   └── README.md
 │
 ├── Lab-02-Regex-to-NFA/
-│   ├── regex_to_nfa.py
+│   ├── regex_to_nfa.cpp
 │   └── README.md
 │
 ├── Lab-03-NFA-to-DFA/
-│   ├── nfa_to_dfa.py
+│   ├── nfa_to_dfa.cpp
 │   └── README.md
 │
 ├── Lab-04-Left-Recursion-Elimination/
-│   ├── left_recursion.py
+│   ├── left_recursion.cpp
 │   └── README.md
 │
 ├── Lab-05-FIRST-FOLLOW/
-│   ├── first_follow.py
+│   ├── first_follow.cpp
 │   └── README.md
 │
 ├── Lab-06-Predictive-Parsing-Table/
-│   ├── predictive_parsing_table.py
+│   ├── predictive_parsing_table.cpp
 │   └── README.md
 │
 └── README.md   ← Main README
 🧠 Technologies Used
 
-Programming Language: Python
+Programming Language: C++
+
+Compiler: GCC / G++
 
 IDE: Visual Studio Code
 
@@ -87,7 +89,7 @@ Conversion of a Non-Deterministic Finite Automaton (NFA) into a Deterministic Fi
 
 🔹 Lab 4: Elimination of Left Recursion
 
-Implementation of an algorithm to remove left recursion from a given context-free grammar (CFG) so that it becomes suitable for top-down parsing.
+Implementation of an algorithm to remove left recursion from a given Context-Free Grammar (CFG) so that it becomes suitable for top-down parsing.
 
 📁 Folder: Lab-04-Left-Recursion-Elimination
 
@@ -112,19 +114,17 @@ This table helps implement top-down predictive parsing.
 📁 Folder: Lab-06-Predictive-Parsing-Table
 
 ▶️ How to Run the Programs
-
-1️⃣ Open the required .py file in VS Code or any Python IDE.
-
-2️⃣ Run the program using the terminal:
-
-python filename.py
+1️⃣ Open the required .cpp file in VS Code or any C++ IDE.
+2️⃣ Compile the program using:
+g++ filename.cpp -o output
+3️⃣ Run the program:
+./output
 
 Example:
 
-python lexical_analyzer.py
-
-3️⃣ Provide input as specified in the respective lab README file.
-
+g++ lexical_analyzer.cpp -o lexical
+./lexical
+4️⃣ Provide input as mentioned in the respective lab README.
 📌 Notes
 
 All experiments are implemented according to the standard Compiler Design Laboratory syllabus.
@@ -138,7 +138,5 @@ Each lab folder contains its own detailed README explaining the algorithm, input
 V. Brijesh Sudharsan
 
 Course: Compiler Design Laboratory
-
 Department: Computer Science and Engineering
-
 Institution: SRM Institute of Science and Technology, Tiruchirappalli
